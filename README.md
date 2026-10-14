@@ -10,10 +10,14 @@ yolo =YOLO("./yolov8n.pt",task="detect")
 result=yolo(source=0)
 
 注：Ctrl+C退出
+
+
 2.demo测试2：识别图片物体
 from ultralytics import YOLO
 yolo = YOLO("./yolov8n.pt", task="detect")
 result = yolo(source=r"D:\Desktop\ultralytics-main\R-C.jpg", show=True, save=True)
+
+
 这里还可以加cof参数，cof越低圈出来的物体越多
 YOLOv8 原生逻辑：只要你写 `save=True`，**它会自动创建 `runs/detect/predict` 文件夹**，不需要你手动指定保存路径，这是 ultralytics 库内置的默认行为。
 
