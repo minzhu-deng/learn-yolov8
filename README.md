@@ -4,6 +4,8 @@ Learning and practicing YOLOv8 object detection, including dataset training, inf
 （base）激活环境->（yolov8）conda activate yolov8
 
 #demo_predict.py#
+
+
 1.demo测试1：摄像头识别物体
 from ultralytics import YOLO
 yolo =YOLO("./yolov8n.pt",task="detect")
